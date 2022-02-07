@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal selector */
+        /* *{
+            background-color: green;
+            color: blue;
+            font-size: larger;
+        } */
+
+        /* p{
+            color:red
+        } */
+
+        .textcolor{
+            color:green;
+        }
+
+        .textlarge{
+            font-size: larger;
+        }
+
+        .textcolor.textlarge{
+            color: greenyellow;
+            font-size: xx-large;
+        }
+
+        /* id selector */
+        #one{
+            color:indianred;
+            font-size: small;
+        }
+
+        div,a,h3{
+            color:brown;
+        }
+
+        /* attribute selector */
+
+        input[value="select me"]{
+            color:green;
+        }
+
+        /* descendent */
+        div p span{
+            background-color: black;
+        }
+
+        /* children */
+        div>p>span{
+            background-color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- class selectors -->
+    <h1>class selectors</h1>
+    <p class="textlarge">para 1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ea quis similique atque inventore aut animi quas. Asperiores, totam eos molestiae explicabo animi vitae repellendus deleniti neque architecto cupiditate. Laboriosam?</p>
+    <p class="textcolor"> Para 2 . Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae temporibus accusantium pariatur error, reiciendis sit accusamus quisquam officiis consectetur ratione dicta optio necessitatibus, sed nesciunt eius beatae? Tempore, similique perspiciatis.</p>
+    <p class="textcolor textlarge">Para 3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vitae omnis velit voluptatem dolore? Corporis veritatis reprehenderit cumque illum minima sit dolorem vel recusandae. Enim quos nulla rerum veritatis fuga?</p>
+    
+    <!-- id selector -->
+    
+    <h1>id selector</h1>
+    <p class="textlarge">para 1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo ea quis similique atque inventore aut animi quas. Asperiores, totam eos molestiae explicabo animi vitae repellendus deleniti neque architecto cupiditate. Laboriosam?</p>
+    <p class="textcolor"> Para 2 . Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae temporibus accusantium pariatur error, reiciendis sit accusamus quisquam officiis consectetur ratione dicta optio necessitatibus, sed nesciunt eius beatae? Tempore, similique perspiciatis.</p>
+    <p class="textcolor textlarge" id ="one">Para 3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vitae omnis velit voluptatem dolore? Corporis veritatis reprehenderit cumque illum minima sit dolorem vel recusandae. Enim quos nulla rerum veritatis fuga?</p>
+
+    <!-- grouping -->
+    <h1>Grouping</h1>
+
+    <div>I am a div</div>
+    <a href="">link to some site</a>
+    <h3>I am heading 3</h3>
+
+    <!-- attribute selectors -->
+    <h1>Attribute selector</h1>
+
+    <input type="text" value="something">
+
+    <input type="text" value="select me">
+
+    <!-- children -->
+    <h1>children</h1>
+    <div>
+        <p>
+            <span>Children example</span>
+        </p>
+    </div>
+
+    <!-- descendent -->
+    <h1>descendent</h1>
+    <div>
+        <span>
+            <p>
+                <span>Descendent example</span>
+            </p>
+        </span>
+    </div>
+
+
+</body>
+</html>

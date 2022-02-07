@@ -1,0 +1,17 @@
+h6{
+    color: blue;
+}
+ul{
+    color: brown;
+    background-color: burlywood;
+}
+ol{
+    color: chartreuse;
+    background-color: lightcoral;
+}
+
+th{
+    color: red;
+    background-color: black;
+}
+

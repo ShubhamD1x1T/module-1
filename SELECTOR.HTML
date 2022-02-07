@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.text3{
+    font-size: x-large;
+}
+.textcolor.text1{
+    color: red;
+}
+.textcolor,.text1{
+    color: sandybrown;
+    font-size: x-large;
+}
+.text1{
+    color:black;
+}
+.team{
+    color: black;
+}
+ /* idselector */
+#teamup{                  
+    color: white;
+}
+#one{
+    color: blue;
+}
+
+
+/* grouping */
+
+#one,#two{
+    color:green;
+    font-size: xx-large;
+}
+#two{
+    color:red;
+}
+.team,.text1{
+    
+    background-color: yellow;
+}
+div,p{
+    color: red;
+}
+input[value="select me"]{
+    color: green;
+}
+/* children */
+div p span{
+    background-color: hotpink;
+}
+div>span span{
+    background-color: indigo;
+}
+
+    </style>
+</head>
+<body>
+    <!-- class selector -->
+    <p class = "text1" id="wow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatum sapiente voluptatem laborum suscipit! Similique cumque blanditiis provident dolore dolorem repudiandae natus? Ratione non, at unde suscipit repudiandae neque commodi.</p>
+    <p class="textcolor"> para2loremhhgygyggfg</p>
+    <p class="textcolor text1">para 3 jbhhjghvghvcghvhjvjdb</p>
+    <h1>heading 1</h1>
+    <div>
+        <h2>heading 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maiores corrupti quae possimus blanditiis qui quia sint soluta dolore excepturi similique minus assumenda, et, eligendi nisi ea ullam fugit eius.</p>
+    </div>
+<!-- id selector -->
+
+<h1>id selector</h1>
+<p class = "textcolor text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatum sapiente voluptatem laborum suscipit! Similique cumque blanditiis provident dolore dolorem repudiandae natus? Ratione non, at unde suscipit repudiandae neque commodi.</p>
+    <p class="textcolor"> para2loremhhgygyggfg</p>
+    <p  id="one">para 3 jbhhjghvghvcghvhjvjdb</p>
+<!-- grouping -->
+
+<p id="two">Grouping</p>
+<h3 id="three">grouping</h3>
+<p>uhg</p>
+<div>
+    <p>gytfuuyg</p>
+</div>
+<!-- attribute selector -->
+
+<h1>attribute selector</h1>
+<input type="text" value="something">
+<input type="text" value="select me">
+<br>
+<br>
+
+<!-- children -->
+<h1>children</h1>
+<div>
+    
+        <p>
+            <span id="teamup">children</span>
+        </p>
+    
+</div>
+
+<!-- decendent -->
+<div>
+    <span>
+        <p class="team">
+            <span>decendent</span>
+        </p>
+    </span>
+</div>
+
+</body>
+</html>
